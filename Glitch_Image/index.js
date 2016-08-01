@@ -30,7 +30,7 @@ img.onload = function() {
         amount: amount_random,
         seed: speed_random,
         iterations: iterations_random,
-        quality: 100
+        quality: 70
     };
 
 
