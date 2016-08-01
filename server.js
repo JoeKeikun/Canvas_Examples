@@ -27,8 +27,10 @@ var mine = {
 
 var server = http.createServer(function(request, response) {
     var pathname = url.parse(request.url).pathname;
-    var pathname = path.join(".", pathname);
-    // console.log(pathname);
+    if (pathname === '/') {
+        pathname = '/index.html';
+    }
+    pathname = path.join(".", pathname);
     var ext = path.extname(pathname);
     ext = ext ? ext.slice(1) : 'unknown';
     fs.exists(pathname, function(exists) {

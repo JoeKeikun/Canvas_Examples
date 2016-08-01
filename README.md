@@ -9,3 +9,4 @@ Examples_Canvas
 #### 演示说明：
  1. 安装nodejs
  2. 运行：node server.js
+ 3. 访问：http://localhost:3001/
